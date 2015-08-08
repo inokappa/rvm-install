@@ -1,6 +1,6 @@
 name: rvm-install
-version: 0.1.0
-description: rvm-instakk
+version: 0.1.1
+description: rvm-install
 keywords:
   - rvm
 properties:
