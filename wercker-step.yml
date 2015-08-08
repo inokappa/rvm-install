@@ -1,0 +1,9 @@
+name: rvm-install
+version: 0.1.0
+description: rvm-instakk
+keywords:
+  - rvm
+properties:
+  ruby-version:
+    type: string
+    required: true
