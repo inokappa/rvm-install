@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ ! -n "${WERCKER_RVM_INSTALL_RUBY_VERSION}" ]; then
+  error 'Please specify ruby-version property'
+  exit 1
+fi
+
 curl -sSL https://rvm.io/mpapis.asc | gpg --import -
 curl -sSL https://get.rvm.io | bash -s stable
 source $HOME/.rvm/scripts/rvm   
